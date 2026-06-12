@@ -11,8 +11,8 @@ team_members:
     email: "shanmukhmaddimsetti@gmail.com"
     role: "AI Engineer"
 
-github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO" # Change this!
-sandbox_link: "https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID" # Change this!
+github_repo: "https://github.com/shanmukh-codes/india-runs-hackathon-2026-singleton.git"
+sandbox_link: "https://colab.research.google.com/drive/18IdojwTm49DcZZk7VFdL1SRbGrylZtjY?usp=sharing"
 
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
