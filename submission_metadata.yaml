@@ -1,0 +1,44 @@
+# Redrob Hackathon — Submission Metadata Template
+team_name: "The Singleton" # Change this!
+
+primary_contact:
+  name: "Maddimsetti S Srinivasa Satya Sai Ganesh" # Change this!
+  email: "shanmukhmaddimsetti@gmail.com" # Change this!
+  phone: "+91-6301412262" # Change this!
+
+team_members:
+  - name: "Maddimsetti S Srinivasa Satya Sai Ganesh"
+    email: "shanmukhmaddimsetti@gmail.com"
+    role: "AI Engineer"
+
+github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO" # Change this!
+sandbox_link: "https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID" # Change this!
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Windows Desktop"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 30
+
+ai_tools_used:
+  - "Gemini"
+
+ai_usage_summary: |
+  Used Gemini Antigravity IDE to pair-program the transition from TF-IDF to Dense Vector embeddings. Assisted in building the FAISS indexing and dynamic reasoning generator.
+
+methodology_summary: |
+  A two-phase Semantic Search ranker. Phase 1 offline-embeds candidates using 'all-MiniLM-L6-v2' and builds a FAISS index. Phase 2 (the 5-minute online script) embeds the JD, retrieves the top 2000 vectors instantly via dot-product, and runs them through behavioral multipliers (notice period, recruiter response rate, OSS activity).
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
