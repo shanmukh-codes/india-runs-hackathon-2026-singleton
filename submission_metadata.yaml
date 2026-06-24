@@ -31,7 +31,7 @@ ai_tools_used:
   - "Gemini"
 
 ai_usage_summary: |
-  Used Gemini Antigravity IDE to pair-program the transition from TF-IDF to Dense Vector embeddings. Assisted in building the FAISS indexing and dynamic reasoning generator.
+  Used Gemini Antigravity IDE to pair-program the core architecture of the Semantic Search engine. Assisted in implementing the FAISS indexing logic, deterministic honeypot filters, and the dynamic reasoning generator.
 
 methodology_summary: |
   A two-phase Semantic Search ranker. Phase 1 offline-embeds candidates using 'all-MiniLM-L6-v2' and builds a FAISS index. Phase 2 (the 5-minute online script) embeds the JD, retrieves the top 2000 vectors instantly via dot-product, and runs them through behavioral multipliers (notice period, recruiter response rate, OSS activity).
